@@ -1,31 +1,28 @@
 
 
 
-Binary search is an efficient algorithm for searching an element in a sorted array. It works using the divide-and-conquer strategy, reducing the search space by half in each step.
 
 
----
+🔍 Binary Search in C 
 
-How Binary Search Works
+Binary search is an efficient algorithm for searching an element in a sorted array.
+It works using the divide-and-conquer strategy, reducing the search space by half at each step.
 
-Step 1: Ensure the array is sorted (Binary search only works on sorted arrays).
 
-Step 2: Find the middle element:
+📌 How Binary Search Works
+
+1️⃣ Ensure the array is sorted (Binary search only works on sorted arrays).
+2️⃣ Find the middle element:
 
 If it's the target value, return its index.
 
 If the target is smaller, search in the left half.
 
 If the target is larger, search in the right half.
+3️⃣ Repeat the process until the element is found or the search space becomes empty.
 
 
-Step 3: Repeat the process until the element is found or the search space becomes empty.
-
-
-
----
-
-Binary Search Code in C
+🖥️ Binary Search Code in C
 
 #include <stdio.h>
 
@@ -70,35 +67,26 @@ int main() {
 }
 
 
----
-
-Explanation of the Code
-
-binarySearch function:
-
-Accepts an array, left & right boundaries, and the target number.
-
-Finds the middle index.
-
-Compares the middle element with the target.
-
-Adjusts the search range accordingly.
 
 
-main function:
+📖 Explanation of the Code
 
-Defines a sorted array.
+🔹 binarySearch function:
 
-Takes user input for the target number.
+✔️ Accepts an array, left & right boundaries, and the target number.
+✔️ Finds the middle index.
+✔️ Compares the middle element with the target.
+✔️ Adjusts the search range accordingly.
 
-Calls binarySearch and displays the result.
+🔹 main function:
+
+✔️ Defines a sorted array.
+✔️ Takes user input for the target number.
+✔️ Calls binarySearch and displays the result.
 
 
 
-
----
-
-Example Output
+📝 Example Output
 
 Enter the number to search: 23
 Element found at index 5
@@ -107,23 +95,27 @@ Enter the number to search: 100
 Element not found in the array
 
 
----
-
-Complexity Analysis
-
-Best Case:  → If the middle element is the target.
-
-Worst/Average Case:  → Since the search space is halved at each step.
 
 
+⏳ Complexity Analysis
 
----
+Best Case (O(1)) → If the middle element is the target.
 
-Why Use Binary Search?
+Worst/Average Case (O(log N)) → Since the search space is halved at each step.
+
+
+
+🎯 Why Use Binary Search?
 
 ✅ Faster than linear search for large datasets.
 ✅ Efficient for sorted arrays.
 ✅ Logarithmic time complexity makes it scalable.
+
+
+
+
+
+
 
 
 
