@@ -102,7 +102,7 @@ return 0;
 
 📖 Explanation of the Code
 
-🔹 binarySearch function:
+🔹 BinarySearch function:
 
 ✔️ Accepts an array, left & right boundaries, and the target number.
 
