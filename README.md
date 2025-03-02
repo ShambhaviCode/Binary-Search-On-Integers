@@ -56,6 +56,7 @@ left = mid + 1;
 return -1; // Element not found
 
 }
+
 int main() 
 
 {
