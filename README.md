@@ -1,8 +1,3 @@
-
-
-
-
-
 🔍 Binary Search in C 
 
 Binary search is an efficient algorithm for searching an element in a sorted array.
