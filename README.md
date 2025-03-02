@@ -27,6 +27,7 @@ If the target is larger, search in the right half.
 #include <stdlib.h>
 
 int main(void) 
+
 {
 
 int iaArr[100], iNum, i, iMid, iLow, iHigh, iFound, iKey;
