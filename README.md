@@ -12,8 +12,8 @@ It works using the divide-and-conquer strategy, reducing the search space by hal
 📌 How Binary Search Works
 
 1️⃣ Ensure the array is sorted (Binary search only works on sorted arrays).
-2️⃣ Find the middle element:
 
+2️⃣ Find the middle element:
 If it's the target value, return its index.
 
 If the target is smaller, search in the left half.
