@@ -23,6 +23,8 @@ If the target is larger, search in the right half.
 
 
 🖥️ Binary Search Code in C
+
+
 #include <stdio.h>
 // Function to perform binary search
 int binarySearch(int arr[], int left, int right, int target) 
