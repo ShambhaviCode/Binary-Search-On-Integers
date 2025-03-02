@@ -20,78 +20,81 @@ If the target is larger, search in the right half.
 🖥️ Binary Search Code in C
 
 
+
 #include <stdio.h>
 
-// Function to perform binary search
+#include <stdlib.h>
 
-int binarySearch(int arr[], int left, int right, int target)
- 
+int main(void) 
 {
 
-while (left <= right)
+int iaArr[100], iNum, i, iMid, iLow, iHigh, iFound, iKey;
+
+printf("\nEnter the number of elements: ");
+
+scanf("%d", &iNum); 
+  
+printf("\nEnter the elements in ascending order:\n");
+
+for (i = 0; i < iNum; i++)
+
+scanf("%d", &iaArr[i]);
+
+printf("\nEnter the key element: ");
+
+scanf("%d", &iKey);
+
+iFound = 0;
+
+iLow = 0;
+
+iHigh = iNum - 1;
+
+while (iLow <= iHigh) 
 
 {
 
-int mid = left + (right - left) / 2;
+iMid = (iLow + iHigh) / 2;
 
-// Check if the middle element is the target
+if (iKey == iaArr[iMid]) 
 
-if (arr[mid] == target)
+{
 
-return mid;
+iFound = 1;
+break;
 
-// If target is smaller, search the left half
+ } 
 
-if (arr[mid] > target)
+else if (iKey < iaArr[iMid]) 
 
-right = mid - 1;
+{
 
-// Else, search the right half
+ iHigh = iMid - 1;
+
+
+} 
 
 else
 
-left = mid + 1;
-
-}
-
-return -1; // Element not found
-
-}
-
-int main() 
-
 {
+            
+iLow = iMid + 1;
 
-int arr[] = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91}; // Sorted array
+ }
 
-int n = sizeof(arr) / sizeof(arr[0]); // Find array size
+ }
 
-int target;
+ if (iFound)
 
-// Get input from user
-
-printf("Enter the number to search: ");
-
-scanf("%d", &target);
-
-// Call binary search function
-
-int result = binarySearch(arr, 0, n - 1, target);
-
-// Print the result
-
-if (result != -1)
-
-printf("Element found at index %d\n", result);
+printf("\nKey element %d found at position %d\n", iKey, iMid + 1);
 
 else
 
-printf("Element not found in the array\n");
+printf("\nKey element not found\n");
 
 return 0;
 
 }
-
 
 
 
@@ -119,23 +122,24 @@ return 0;
 
 📝 Example Output
 
-Enter the number to search: 23
+Enter the number of elements
 
-Element found at index 5
+5
 
-Enter the number to search: 100
+Enter the elements in ascending order
 
-Element not found in the array
+12 23 37 46 78
 
+Enter the key element
 
+37
 
+Key element 37 found at position 3
 
-⏳ Complexity Analysis
+Process returned 0 (0×0)   
+execution time : 23.048 s
 
-Best Case (O(1)) → If the middle element is the target.
-
-Worst/Average Case (O(log N)) → Since the search space is halved at each step.
-
+Press any key to continue.
 
 
 🎯 Why Use Binary Search?
