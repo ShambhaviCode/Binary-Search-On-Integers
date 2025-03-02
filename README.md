@@ -100,14 +100,19 @@ return 0;
 🔹 binarySearch function:
 
 ✔️ Accepts an array, left & right boundaries, and the target number.
+
 ✔️ Finds the middle index.
+
 ✔️ Compares the middle element with the target.
+
 ✔️ Adjusts the search range accordingly.
 
 🔹 main function:
 
 ✔️ Defines a sorted array.
+
 ✔️ Takes user input for the target number.
+
 ✔️ Calls binarySearch and displays the result.
 
 
@@ -115,9 +120,11 @@ return 0;
 📝 Example Output
 
 Enter the number to search: 23
+
 Element found at index 5
 
 Enter the number to search: 100
+
 Element not found in the array
 
 
@@ -126,6 +133,7 @@ Element not found in the array
 ⏳ Complexity Analysis
 
 Best Case (O(1)) → If the middle element is the target.
+
 Worst/Average Case (O(log N)) → Since the search space is halved at each step.
 
 
