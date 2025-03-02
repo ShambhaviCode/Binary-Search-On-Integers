@@ -14,6 +14,7 @@ If it's the target value, return its index.
 If the target is smaller, search in the left half.
 
 If the target is larger, search in the right half.
+
 3️⃣ Repeat the process until the element is found or the search space becomes empty.
 
 
