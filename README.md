@@ -27,6 +27,7 @@ If the target is larger, search in the right half.
 int binarySearch(int arr[], int left, int right, int target)
  
 {
+
 while (left <= right)
 
 {
@@ -132,7 +133,9 @@ Worst/Average Case (O(log N)) → Since the search space is halved at each step.
 🎯 Why Use Binary Search?
 
 ✅ Faster than linear search for large datasets.
+
 ✅ Efficient for sorted arrays.
+
 ✅ Logarithmic time complexity makes it scalable.
 
 
